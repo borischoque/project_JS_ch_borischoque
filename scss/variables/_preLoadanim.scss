@@ -1,0 +1,70 @@
+// ARCHIVO----> ESTILOS PARA ANIMACION EN PAGINA DE CARGA PREVIA
+.loading-area {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: gray;
+  opacity: 0.75;
+}
+
+.loader {
+  width: 20em;
+  height: 20em;
+  line-height: 20em;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -10em 0 0 -10em;
+  font-size: 3em;
+  color: #fff;
+  perspective: 20em;
+}
+
+.load_anim1,
+.load_anim2 {
+  position: absolute;
+  width: 30em;
+  height: 30em;
+  border-radius: 50%;
+  border: 0.5em solid;
+  border-left-color: red;
+  border-right-color: yellow;
+  border-top-color: yellowgreen;
+  border-bottom-color: blue;
+  left: 45%;
+  top: 43%;
+  margin: -10em 0 0 -10em;
+  animation: loadAnim 3s;
+  animation-iteration-count: infinite;
+}
+
+.load_anim2 {
+  animation: loadAnim2 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loadAnim {
+  0% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+@keyframes loadAnim2 {
+  0% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, -360deg);
+  }
+}
+
+.hidden {
+  display: none;
+}

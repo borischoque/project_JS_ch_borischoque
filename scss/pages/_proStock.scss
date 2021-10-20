@@ -1,0 +1,265 @@
+//********************************************
+// ARCHIVO----> ESTILOS PARA PAGINA STOCK
+//********************************************
+.stock {
+  &__seccionTitulo {
+    margin-top: $margenEntreSeccion;
+    margin-right: $margenLateralesSeccion;
+    margin-left: $margenLateralesSeccion;
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(
+      to bottom,
+      $proGeneralSeccion2,
+      $proGeneralSeccion1
+    );
+    @keyframes movimiento {
+      0% {
+        align-self: center;
+      }
+      25% {
+        align-self: flex-start;
+      }
+      50% {
+        align-self: center;
+      }
+      75% {
+        align-self: flex-end;
+      }
+      100% {
+        align-self: center;
+      }
+    }
+    @include deskop_to_tablet {
+      font-size: $textTamaño2;
+    }
+    @include tablet_disp {
+      font-size: $textTamaño2;
+    }
+    @include mobile_disp {
+      font-size: $textTamaño1;
+    }
+    &--simbol {
+      letter-spacing: 0.75em;
+      color: $proGeneralTexto;
+      font-size: 3em;
+      animation-name: movimiento;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 0.5s;
+      animation-delay: 0s;
+      @include deskop_to_tablet {
+        letter-spacing: 0.3em;
+      }
+      @include tablet_disp {
+        letter-spacing: 0.25em;
+      }
+      @include mobile_disp {
+        display: none;
+      }
+    }
+    &--texto {
+      color: $proGeneralTexto;
+      font-family: "Roboto", sans-serif;
+      font-size: 2.5em;
+      letter-spacing: 0.3em;
+      @include deskop_to_tablet {
+        letter-spacing: 0.1em;
+      }
+      @include tablet_disp {
+        letter-spacing: 0;
+      }
+    }
+    &--Complemento {
+      @include deskop_to_tablet {
+        font-size: $textTamaño2;
+      }
+      @include tablet_disp {
+        font-size: $textTamaño2;
+      }
+      @include mobile_disp {
+        font-size: $textTamaño1;
+      }
+    }
+    &--ComplementoTexto {
+      margin: $margenEntreSeccion 20vw;
+      color: $proGeneralTexto;
+      font-size: 2.5em;
+    }
+  }
+  &__seccionOfertas {
+    margin-top: $margenEntreSeccion;
+    margin-right: $margenLateralesSeccion;
+    margin-left: $margenLateralesSeccion;
+    @include deskop_to_tablet {
+      font-size: $textTamaño2;
+    }
+    @include tablet_disp {
+      font-size: $textTamaño2;
+    }
+    @include mobile_disp {
+      font-size: $textTamaño1;
+    }
+    &--texto {
+      color: $proGeneralTexto;
+      font-size: 2em;
+      text-transform: uppercase;
+    }
+    &--cuadroOfertas {
+      margin-top: $margenEntreSeccion;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    &--contenedorTarjeta,
+    &--contenedorTarjetaType2 {
+      width: 40em;
+      height: 20em;
+      perspective: 100em;
+      @include deskop_to_tablet {
+        cursor: pointer;
+      }
+    }
+    &--tarjeta {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 500ms ease-in-out;
+    }
+    &--contenedorTarjeta:hover &--tarjeta {
+      transform: rotateX(180deg);
+    }
+    &--contenedorTarjetaType2:hover &--tarjeta {
+      transform: rotateY(180deg);
+    }
+    &--frente,
+    &--frenteType2,
+    &--opuestoType2,
+    &--opuesto {
+      backface-visibility: hidden;
+      position: absolute;
+      border-radius: 2em;
+      box-shadow: 1em 1em 2em grey;
+    }
+    &--frente,
+    &--frenteType2 {
+      height: 100%;
+      width: 100%;
+      background-color: orangered;
+      opacity: 0.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--frente:hover,
+    &--frenteType2:hover {
+      color: white;
+      opacity: 1;
+    }
+    &--textoFrente {
+      text-transform: uppercase;
+      font-size: 3em;
+      color: black;
+    }
+    &--opuesto,
+    &--opuestoType2 {
+      height: min-content;
+      width: 100%;
+      top: 0;
+      transform: rotateX(180deg);
+    }
+    &--opuestoType2 {
+      transform: rotateY(180deg);
+      top: 0;
+    }
+  }
+  &__seccion2 {
+    margin-top: 2em;
+    margin-right: $margenLateralesSeccion;
+    margin-left: $margenLateralesSeccion;
+    @include deskop_to_tablet {
+      font-size: $textTamaño2;
+    }
+    @include tablet_disp {
+      font-size: $textTamaño2;
+    }
+    @include mobile_disp {
+      font-size: $textTamaño1;
+    }
+    &--texto {
+      margin-top: $margenEntreSeccion;
+      background-color: #eccdaf;
+      color: brown;
+      font-size: 2.5em;
+      text-align: center;
+    }
+    &--galeria {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    &--cuadroStock {
+      margin-top: $margenEntreSeccion;
+      width: 40em;
+      background-color: #d3d2d2;
+      display: grid;
+      grid-template-areas:
+        "imagen-producto boton-compra"
+        "imagen-producto tabla-precio"
+        "imagen-producto tabla-precio";
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      border: 0.1rem solid brown;
+      border-radius: 1rem;
+    }
+    &--imgStock {
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+      grid-area: imagen-producto;
+      justify-self: center;
+      align-self: center;
+      border: solid 0.5em #e65936;
+      border-radius: 1em;
+    }
+    &--btnCompra {
+      grid-area: boton-compra;
+      background-color: #eb6a4d;
+      font-size: 2.5em;
+      width: min-content;
+      padding: 0.2em;
+      border-radius: 1em;
+    }
+    &--tabla {
+      grid-area: tabla-precio;
+      margin: 0 1em;
+      border: solid 0.5em black;
+      border-radius: 1em;
+    }
+    &--tablaCabecera {
+      font-size: 2em;
+    }
+    &--tablaPrecio {
+      font-size: 2em;
+      text-align: center;
+    }
+    &--sinStock {
+      margin: $margenEntreSeccion 20vw;
+      color: $proGeneralTexto;
+    }
+    &--textoSinStock {
+      background-color: grey;
+      opacity: 0.7;
+      text-transform: uppercase;
+      font-size: 2.5em;
+      padding: 1em;
+      border-radius: 1em;
+      border: solid brown 0.2em;
+    }
+  }
+}

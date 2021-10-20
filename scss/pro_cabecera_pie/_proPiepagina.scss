@@ -1,0 +1,72 @@
+// ARCHIVO----> ESTILOS PARA PIE DE PAGINA
+@import "../variables/variables";
+@import "../mixin/mixin";
+.piepagina {
+  margin-top: $margenEntreSeccion;
+  height: 20vh;
+  @include deskop_to_tablet {
+    font-size: $textTamaño1;
+    height: 15vh;
+  }
+  @include mobile_disp {
+    height: 10vh;
+  }
+  &__seccion1 {
+    height: 80%;
+    background-image: linear-gradient(to right, $pieGradiente1, $pieGradiente2);
+    display: flex;
+    &--imagen {
+      height: 100%;
+      width: auto;
+      @include mobile_disp {
+        display: none;
+      }
+    }
+    &--subSeccion {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin: auto 0;
+      @include mobile_disp {
+        justify-content: center;
+      }
+    }
+    &--titulo1 {
+      font-size: 2em;
+    }
+    &--titulo2 {
+      font-size: 2em;
+      @include mobile_disp {
+        font-size: 3em;
+        text-align: center;
+      }
+    }
+    &--img {
+      height: 3em;
+      width: 3em;
+      @include mobile_disp {
+        height: 4em;
+        width: 4em;
+        padding: 0 3em;
+      }
+    }
+    &--subtexto1 {
+      font-size: 1.5em;
+    }
+    &--titulo1,
+    &--subtexto1 {
+      @include mobile_disp {
+        display: none;
+      }
+    }
+  }
+  &__seccion2 {
+    height: 20%;
+    background-color: $pieFondo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: $pieTextoFondo;
+  }
+}

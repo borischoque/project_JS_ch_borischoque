@@ -1,0 +1,24 @@
+//********************************************
+// ARCHIVO----> ESTILOS PARA PÀGINA DE ERROR
+//********************************************
+#error section {
+  margin: 10% auto;
+  background-color: grey;
+  height: 30vh;
+  width: 50rem;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#error section h1 {
+  font-size: 5rem;
+}
+
+#error section p {
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}

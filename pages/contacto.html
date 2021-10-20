@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ITEMS PARA SEO -->
+    <meta name="keyword" content="clientes, ofertas, registro, contacto">
+    <meta name="description" content="Para nuestros clientes registrados ofrecemos descuentos exclusivos y ademas regalos de muestra.">
+    <title>BCVentas-Contacto</title>
+    <!-- FINAL ITEMAS PARA SEO -->
+    <link rel="icon" href="../img/bxs-user.svg">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <!-- PANTALLA PREVIA A CARGA DE PÀGINA-->
+    <div id="spin" class="loading-area">
+        <span class="loader">Loading...</span>
+        <span class="load_anim1"></span>
+        <span class="load_anim2"></span>
+    </div>
+    <!-- *********************** FINAL PANTALLA PREVIA-->
+    <!-- ENCABEZADO DE PAGINA-->
+    <header class="cabecera">
+        <!-- ENCABEZADO DE PAGINA: LOGO-->
+        <a class="cabecera__logo" href="https://www.naturacosmeticos.com.ar">
+            <img class="cabecera__logo--imagen" alt="Logo de producto" src="../img/natura.svg">
+            <img class="cabecera__logo--imagenMobile" alt="Logo de producto" src="../img/natura_mobile.svg">
+        </a>
+        <!-- ENCABEZADO DE PAGINA: MENU HAMBURGUESA-->
+        <input type="checkbox" id="menu" class="cabecera__menuMobile">
+        <label for="menu" class="cabecera__menuMobile--hambur">
+            <span class="cabecera__menuMobile--hamburguesaborde"></span>
+        </label>
+        <!-- ENCABEZADO DE PAGINA: MENU NAVEGACION-->
+        <nav class="cabecera__navegacion">
+            <ul class="cabecera__navegacion--menu">
+                <li class="cabecera__navegacion--itemLista">
+                    <a class="cabecera__navegacion--itemLink" href="../index.html">PRINCIPAL</a>
+                </li>
+                <li class="cabecera__navegacion--itemLista">
+                    <a class="cabecera__navegacion--itemLink" href="productos.html">PRODUCTOS</a>
+                </li>
+                <li class="cabecera__navegacion--itemLista">
+                    <a class="cabecera__navegacion--itemLink" href="stock.html">STOCK</a>
+                </li>
+                <li class="cabecera__navegacion--itemLista">
+                    <a class="cabecera__navegacion--itemLink cabecera__navegacion--itemLinkActual" href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- *********************** FINAL ENCABEZADO DE PAGINA-->
+    <main class="contacto">
+        <!-- stock ******** TITULO CABECERA-->
+        <section class="contacto__seccionTitulo">
+            <p class="contacto__seccionTitulo--simbol">&darr; &darr; &darr; &darr; &darr;</p>
+            <h3 class="contacto__seccionTitulo--texto">CONTACTO</h3>
+            <p class="contacto__seccionTitulo--simbol">&darr; &darr; &darr; &darr; &darr;</p>
+        </section>
+        <section class="contacto__seccionTitulo--Complemento">
+            <h4 class="contacto__seccionTitulo--ComplementoTexto">!! dejanos tus datos de contacto y tendras muestras y beneficios exclusivos ¡¡</h4>
+            <ul class="contacto__seccionTitulo--Lista">
+                <li class="contacto__seccionTitulo--itemLista">
+                    Ofertas que NO se ven en la página
+                </li>
+                <li class="contacto__seccionTitulo--itemLista">
+                    Prioridad para que te entreguemos antes tu pedido
+                </li>
+                <li class="contacto__seccionTitulo--itemLista">
+                    Descuentos especiales (SOLO ENVIOS A CABA)
+                </li>
+            </ul>
+        </section>
+        <!-- *********************** FINAL TITULO CABECERA-->
+        <!-- stock ******** RECUADRO -->
+        <section class="contacto__recuadro">
+            <!-- stock ******** SECCION FORMULARIO-->
+            <section class="contacto__seccionFormulario">
+                <fieldset  class="contacto__seccionFormulario--borde">
+                    <legend class="contacto__seccionFormulario--titulo">por favor completa estos datos</legend>
+                    <form class="contacto__seccionFormulario--formulario" action="index.js" method="GET">
+                        <label class="contacto__seccionFormulario--etiqueta" for="searcher">NOMBRE:</label>
+                        <input class="contacto__seccionFormulario--inputDatos " type="text" name="searcher">
+                        <label class="contacto__seccionFormulario--etiqueta" for="searcher">APELLIDO:</label>
+                        <input class="contacto__seccionFormulario--inputDatos " type="text" name="searcher">
+                        <label class="contacto__seccionFormulario--etiqueta" for="searcher">DIRECCION:</label>
+                        <input class="contacto__seccionFormulario--inputDatos " type="text" name="searcher">
+                        <label class="contacto__seccionFormulario--etiqueta" for="searcher">TELEFONO:</label>
+                        <input class="contacto__seccionFormulario--inputDatos " type="text" name="searcher">
+                        <label class="contacto__seccionFormulario--etiqueta" for="searcher">E-MAIL:</label>
+                        <input class="contacto__seccionFormulario--inputDatos " type="text" name="searcher">
+                    </form>
+                </fieldset>
+            </section>
+            <!-- *********************** FINAL SECCION FORMULARIO-->
+            <!-- stock ******** SECCION MAPA-->
+            <iframe class="contacto__seccionMapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d105052.85607521817!2d-58.41322683262905!3d-34.63192299942402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1632264117525!5m2!1ses!2sar" allowfullscreen=""></iframe>
+            <!-- *********************** FINAL SECCION MAPA-->
+        </section>
+        <!-- *********************** FINAL RECUADRO-->
+    </main>
+    <!-- PIE DE PAGINA-->
+    <footer class="piepagina">
+        <!-- PIE DE PAGINA: SECCION SUPERIOR-->
+        <section class="piepagina__seccion1">
+            <!-- PIE DE PAGINA: LOGO-->
+            <a href="https://www.naturacosmeticos.com.ar">
+                <img class="piepagina__seccion1--imagen" alt="Logo de producto" src="../img/natura.svg">
+            </a>
+            <!-- PIE DE PAGINA: FINAL LOGO-->
+            <!-- PIE DE PAGINA: SECCION DE CONTACTO-->
+            <div class="piepagina__seccion1--subSeccion">
+                <div >
+                    <h3 class="piepagina__seccion1--titulo1">Contacto</h3>
+                    <ul>
+                        <li class="piepagina__seccion1--subtexto1">
+                            Tel: XXXX-XXXX 
+                        </li>
+                        <li class="piepagina__seccion1--subtexto1">
+                            E-mail:xxxxxx@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <!-- PIE DE PAGINA: FINAL SECCION DE CONTACTO-->
+                <!-- PIE DE PAGINA: SECCION DE REDES SOCIALES-->
+                <div>
+                    <h3 class="piepagina__seccion1--titulo2">Redes Sociales</h3>
+                    <a href="https://es-la.facebook.com">
+                        <img src="../img/bxl-facebook.svg" alt="Icono_Red_Social" class="piepagina__seccion1--img">
+                    </a>
+                    <a href="https://www.instagram.com/?hl=es">
+                        <img src="../img/bxl-instagram.svg" alt="Icono_Red_Social" class="piepagina__seccion1--img">
+                    </a>
+                    <a href="https://web.whatsapp.com/">
+                        <img src="../img/icons8-whatsapp.svg" alt="Icono_Red_Social" class="piepagina__seccion1--img">
+                    </a>
+                    <a href="https://twitter.com/?lang=es">
+                        <img src="../img/bxl-twitter.svg" alt="Icono_Red_Social" class="piepagina__seccion1--img">
+                    </a>
+                </div>
+                <!-- PIE DE PAGINA: FINAL SECCION DE REDES SOCIALES-->
+            </div>
+        </section>
+        <!-- PIE DE PAGINA: FINAL SECCION SUPERIOR-->
+        <!-- PIE DE PAGINA: SECCION INFERIOR-->
+        <div class="piepagina__seccion2">
+            &copy; Derechos Reservados - XXVentas - 2021
+        </div>
+        <!-- PIE DE PAGINA: FINAL SECCION INFERIOR-->
+    </footer>
+    <!-- *********************** PIE DE PAGINA-->
+    <!-- SCRIPT PANTALLA PREVIA-->
+    <script src="../scripts/main.js"></script>
+    <!-- *********************** FINAL SCRIPT PANTALLA PREVIA-->
+</body>
+</html>

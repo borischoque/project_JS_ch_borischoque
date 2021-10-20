@@ -1,0 +1,203 @@
+//********************************************
+// ARCHIVO----> ESTILOS PARA PAGINA CONTACTO
+//********************************************
+.contacto {
+  &__seccionTitulo {
+    margin-top: $margenEntreSeccion;
+    margin-right: $margenLateralesSeccion;
+    margin-left: $margenLateralesSeccion;
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(
+      to bottom,
+      $proGeneralSeccion2,
+      $proGeneralSeccion1
+    );
+    @keyframes movimiento {
+      0% {
+        align-self: center;
+      }
+      25% {
+        align-self: flex-start;
+      }
+      50% {
+        align-self: center;
+      }
+      75% {
+        align-self: flex-end;
+      }
+      100% {
+        align-self: center;
+      }
+    }
+    @include deskop_to_tablet {
+      font-size: $textTamaño2;
+    }
+    @include tablet_disp {
+      font-size: $textTamaño2;
+    }
+    @include mobile_disp {
+      font-size: $textTamaño1;
+    }
+    &--simbol {
+      letter-spacing: 0.75em;
+      color: $proGeneralTexto;
+      font-size: 3em;
+      animation-name: movimiento;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 0.5s;
+      animation-delay: 0s;
+      @include deskop_to_tablet {
+        letter-spacing: 0.3em;
+      }
+      @include tablet_disp {
+        letter-spacing: 0.25em;
+      }
+      @include mobile_disp {
+        display: none;
+      }
+    }
+    &--texto {
+      color: $proGeneralTexto;
+      font-family: "Roboto", sans-serif;
+      font-size: 2.5em;
+      letter-spacing: 0.3em;
+      @include deskop_to_tablet {
+        letter-spacing: 0.1em;
+      }
+      @include tablet_disp {
+        letter-spacing: 0;
+      }
+    }
+    &--Complemento {
+      @include deskop_to_tablet {
+        font-size: $textTamaño2;
+      }
+      @include tablet_disp {
+        font-size: $textTamaño2;
+      }
+      @include mobile_disp {
+        font-size: $textTamaño1;
+      }
+    }
+    &--ComplementoTexto {
+      margin: $margenEntreSeccion 20vw;
+      color: $proGeneralTexto;
+      font-size: 2.5em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    &--Lista {
+      display: flex;
+      justify-content: space-around;
+      @include tablet_disp {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    &--itemLista {
+      list-style-image: url("../img/bxs-check-square.svg");
+      font-family: "Roboto", sans-serif;
+      width: 10em;
+      color: #eb994d;
+      padding: 0.1em 0.1em;
+      margin: 0 1em;
+      font-size: 2em;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 1em;
+    }
+    &--itemLista:hover {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      background-color: rgb(197, 190, 190);
+      color: white;
+      border: #eb994d solid 0.1em;
+      height: min-content;
+    }
+  }
+  &__recuadro {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    @include deskop_to_tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__seccionFormulario {
+    margin-top: $margenEntreSeccion;
+    // margin-right: auto;
+    // margin-left: auto;
+    @include deskop_to_tablet {
+      font-size: $textTamaño2;
+    }
+    @include tablet_disp {
+      font-size: $textTamaño2;
+    }
+    @include mobile_disp {
+      font-size: $textTamaño1;
+    }
+    &--borde {
+      margin: 0 auto;
+      border-radius: 2em;
+      border: brown solid 0.1em;
+      width: min-content;
+      padding: 2em 2.5em;
+    }
+    &--formulario {
+      margin-right: $margenLateralesSeccion;
+      margin-left: $margenLateralesSeccion;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &--titulo {
+      padding-right: 1em;
+      color: $proGeneralTexto;
+      text-transform: uppercase;
+      font-size: 2.5em;
+      @include tablet_disp {
+        padding: 0 0;
+        text-align: center;
+      }
+    }
+    &--etiqueta {
+      margin-top: $margenEntreSeccion;
+      color: $proGeneralTexto;
+      font-size: 2em;
+    }
+    &--inputDatos {
+      width: 30em;
+      font-size: 2em;
+      @include tablet_disp {
+        width: 20em;
+      }
+      &:focus {
+        background-color: #f3dcc7;
+      }
+    }
+  }
+  &__seccionMapa {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 30em;
+    height: 35em;
+    border: lightslategray solid 0.5em;
+    @include deskop_to_tablet {
+      font-size: $textTamaño2;
+    }
+    @include tablet_disp {
+      font-size: $textTamaño2;
+      // width: 25em;
+      // height: 30em;
+    }
+    @include mobile_disp {
+      font-size: $textTamaño1;
+    }
+  }
+}

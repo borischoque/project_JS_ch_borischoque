@@ -1,0 +1,18 @@
+// ARCHIVO----> NORMALIZADOR Y STANDARD
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style-type: none;
+}
+
+// font-family: 'Atkinson Hyperlegible', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+html {
+  font-family: "Atkinson Hyperlegible", sans-serif !important;
+  font-size: 62.5%;
+}

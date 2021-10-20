@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ITEMS PARA SEO -->
+    <meta name="keyword" content="productos, lista producto, descripción, perfumes, belleza, cuidados, cabellos">
+    <meta name="description" content="Ofrecemos una variedad de productos para la mujer. Siempre tendras un descuento.">
+    <title>BCVentas-Productos</title>
+    <!-- FINAL ITEMAS PARA SEO -->
+    <link rel="icon" href="../img/icons8-delivery-16.png">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>BCVentas-Productos</title>
+</head>
+<body>
+    <!-- PANTALLA PREVIA A CARGA DE PÀGINA-->
+    <div id="spin" class="loading-area">
+        <span class="loader">Loading...</span>
+        <span class="load_anim1"></span>
+        <span class="load_anim2"></span>
+    </div>
+    <!-- *********************** FINAL PANTALLA PREVIA-->
+    <!-- ENCABEZADO DE PAGINA-->
+    <header class="cabecera">
+        <!-- ENCABEZADO DE PAGINA: LOGO-->
+        <a class="cabecera__logo" href="https://www.naturacosmeticos.com.ar">
+            <img class="cabecera__logo--imagen" alt="Logo de producto" src="../img/natura.svg">
+            <img class="cabecera__logo--imagenMobile" alt="Logo de producto" src="../img/natura_mobile.svg">
+        </a>
+        <!-- ENCABEZADO DE PAGINA: MENU HAMBURGUESA-->
+        <input type="checkbox" id="menu" class="cabecera__menuMobile">
+        <label for="menu" class="cabecera__menuMobile--hambur">
+            <span class="cabecera__menuMobile--hamburguesaborde"></span>
+        </label>
+        <!-- ENCABEZADO DE PAGINA: MENU NAVEGACION-->
+        <nav class="cabecera__navegacion">
+            <ul class="cabecera__navegacion--menu">
+                <li class="cabecera__navegacion--itemLista">
+                    <a class="cabecera__navegacion--itemLink" href="../index.html">PRINCIPAL</a>
+                </li>
+                <li class="cabecera__navegacion--itemLista">
+                    <a class="cabecera__navegacion--itemLink cabecera__navegacion--itemLinkActual" href="productos.html">PRODUCTOS</a>
+                </li>
+                <!-- <li class="cabecera__navegacion--itemLista">
+                    <a class="cabecera__navegacion--itemLink" href="stock.html">STOCK</a>
+                </li>
+                <li class="cabecera__navegacion--itemLista">
+                    <a class="cabecera__navegacion--itemLink" href="contacto.html">CONTACTO</a>
+                </li> -->
+            </ul>
+        </nav>
+    </header>
+    <!-- *********************** FINAL ENCABEZADO DE PAGINA-->
+    <!-- CUERPO PAGINA PRODUCTOS-->
+    <main class="productos">
+        <!-- PRODUCTOS ******** TITULO CABECERA-->
+        <section class="productos__seccionTitulo">
+            <p class="productos__seccionTitulo--simbol">&darr; &darr; &darr; &darr; &darr;</p>
+            <h3 class="productos__seccionTitulo--texto">GALERIA PRODUCTOS</h3>
+            <p class="productos__seccionTitulo--simbol">&darr; &darr; &darr; &darr; &darr;</p>
+        </section>
+        <!-- *********************** FINAL TITULO CABECERA-->
+        <!-- PRODUCTOS ******** BACKGROUND-->
+        <section class="productos__seccionFondo">
+            <div class="productos__seccionFondo--linea"></div>
+            <div class="productos__seccionFondo--linea"></div>
+            <div class="productos__seccionFondo--linea"></div>
+            <div class="productos__seccionFondo--linea"></div>
+            <div class="productos__seccionFondo--linea"></div>
+            <div class="productos__seccionFondo--linea"></div>
+            <div class="productos__seccionFondo--linea"></div>
+        </section>
+        <!-- *********************** FINAL BACKGROUND-->
+        <!-- stock ******** SECCION OFERTAS-->
+        <section class="stock__seccionOfertas">
+            <!-- stock ******** TEXTO INTRODUCCION-->
+            <h3 class="stock__seccionOfertas--texto">
+                mira las sopresas de la semana...
+            </h3>
+            <section class="stock__seccionOfertas--cuadroOfertas">
+                <!-- stock ******** OFERTA 01-->
+                <div class="stock__seccionOfertas--contenedorTarjeta">
+                    <div class="stock__seccionOfertas--tarjeta">
+                        <div class="stock__seccionOfertas--frente">
+                            <h4 class="stock__seccionOfertas--textoFrente" >sorpresa 1</h4>
+                        </div>
+                        <div class="stock__seccionOfertas--opuesto">
+                            <div class="stock__seccion2--cuadroStock">
+                                <img class="stock__seccion2--imgStock" alt="imagen_stock" src="../img/productos/PR-04.jpeg">
+                                <button class="stock__seccion2--btnCompra" type="button">COMPRAR</button>
+                                <table class="stock__seccion2--tabla">
+                                    <tr>
+                                        <th class="stock__seccion2--tablaCabecera">PRECIO LISTA</th>
+                                        <td class="stock__seccion2--tablaPrecio">XXX$</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <th class="stock__seccion2--tablaCabecera">PRECIO VENTA</th>
+                                        <td class="stock__seccion2--tablaPrecio">XXX$</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- *********************** FINAL OFERTA 01-->
+                <!-- stock ******** OFERTA 02-->
+                <div class="stock__seccionOfertas--contenedorTarjetaType2">
+                    <div class="stock__seccionOfertas--tarjeta">
+                        <div class="stock__seccionOfertas--frenteType2">
+                            <h4 class="stock__seccionOfertas--textoFrente" >sorpresa 2</h4>
+                        </div>
+                        <div class="stock__seccionOfertas--opuestoType2">
+                            <div class="stock__seccion2--cuadroStock">
+                                <img class="stock__seccion2--imgStock" alt="imagen_stock" src="../img/productos/PR-04.jpeg">
+                                <button class="stock__seccion2--btnCompra" type="button">COMPRAR</button>
+                                <table class="stock__seccion2--tabla">
+                                    <tr>
+                                        <th class="stock__seccion2--tablaCabecera">PRECIO LISTA</th>
+                                        <td class="stock__seccion2--tablaPrecio">XXX$</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <th class="stock__seccion2--tablaCabecera">PRECIO VENTA</th>
+                                        <td class="stock__seccion2--tablaPrecio">XXX$</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- *********************** FINAL OFERTA 02-->
+                <!-- stock ******** OFERTA 03-->
+                <div class="stock__seccionOfertas--contenedorTarjeta">
+                    <div class="stock__seccionOfertas--tarjeta">
+                        <div class="stock__seccionOfertas--frente">
+                            <h4 class="stock__seccionOfertas--textoFrente" >sorpresa 3</h4>
+                        </div>
+                        <div class="stock__seccionOfertas--opuesto">
+                            <div class="stock__seccion2--cuadroStock">
+                                <img class="stock__seccion2--imgStock" alt="imagen_stock" src="../img/productos/PR-04.jpeg">
+                                <button class="stock__seccion2--btnCompra" type="button">COMPRAR</button>
+                                <table class="stock__seccion2--tabla">
+                                    <tr>
+                                        <th class="stock__seccion2--tablaCabecera">PRECIO LISTA</th>
+                                        <td class="stock__seccion2--tablaPrecio">XXX$</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <th class="stock__seccion2--tablaCabecera">PRECIO VENTA</th>
+                                        <td class="stock__seccion2--tablaPrecio">XXX$</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- *********************** FINAL OFERTA 03-->
+            </section>
+        </section>
+        <!-- stock ************************** SECCION OFERTAS-->
+        <!-- PRODUCTOS ******** SECCION 1-->
+        <section class="productos__seccion1">
+            <!-- TARJETA -->
+            <div class="productos__seccion1--tarjeta">
+                <h2 class="productos__seccion1--textoTarjeta">
+                    BUSCALO<br>POR TU <br>CUENTA
+                </h2>
+                <div class="productos__seccion1--imagenTarjeta">
+                </div>
+                <button class="productos__seccion1--lateralBoton"></button>
+            </div>
+            <!-- FORMULARIO -->
+            <form class="productos__seccion1--formulario" action="index.js" method="GET">
+                <label class="productos__seccion1--etiqueta" for="searcher">¿QUE BUSCAS?</label>
+                <input class="productos__seccion1--inputDatos " type="text" name="searcher" id="" placeholder="Ingresa el nombre del producto que buscas">
+            </form>
+        </section>
+        <!-- PRODUCTOS ************************** SECCION 1-->
+        <!-- PRODUCTOS ******** SECCION 2-->
+        <section class="productos__seccion2">
+            <!-- TARJETA -->
+            <div class="productos__seccion2--tarjeta">
+                <h2 class="productos__seccion2--textoTarjeta">
+                    BUSCA POR<br>TIPO DE<br>PRODUCTO
+                </h2>
+                <div class="productos__seccion2--imagenTarjeta">
+                </div>
+                <button class="productos__seccion2--lateralBoton"></button>
+            </div>
+            <!-- CUADRO DE PRODUCTOS -->
+            <ul class="productos__seccion2--cuadroImagenes">
+                <li class="productos__seccion2--itemCuadro">
+                    <a class="productos__seccion2--itemLink" href="#perfumeria">PERFUMERIA</a>
+                </li>
+                <li class="productos__seccion2--itemCuadro">
+                    <a class="productos__seccion2--itemLink" href="#bellezaycuidado">BELLEZA Y CUIDADO</a>
+                </li>
+                <li class="productos__seccion2--itemCuadro">
+                    <a class="productos__seccion2--itemLink" href="#cuidadosdiarios">CUIDADOS DIARIOS</a>
+                </li>
+                <li class="productos__seccion2--itemCuadro">
+                    <a class="productos__seccion2--itemLink" href="#cabellos">CABELLOS</a>
+                </li>
+                <li class="productos__seccion2--itemCuadro">
+                    <a class="productos__seccion2--itemLink" href="#fotoequilibrio">FOTOEQUILIBRIO</a>
+                </li>
+                <li class="productos__seccion2--itemCuadro">
+                    <a class="productos__seccion2--itemLink" href="#nature">NATURÉ</a>
+                </li>
+                <li class="productos__seccion2--itemCuadro">
+                    <a class="productos__seccion2--itemLink" href="#mamaybebe">MAMA Y BEBE</a>
+                </li>
+                <li class="productos__seccion2--itemCuadro">
+                    <a class="productos__seccion2--itemLink" href="#crecerparaver">CREER PARA VER</a>
+                </li>
+            </ul>
+        </section>
+        <!-- PRODUCTOS ************************** SECCION 2-->
+        <!-- PRODUCTOS ******** SECCION 3-->
+        <section class="productos__seccion3">
+            <!-- ************************************************ -->
+            <!-- PRODUCTOS ******** SECCION 3--- PERFUMERIA -->
+            <h3 id="perfumeria" class="productos__seccion3--texto">
+                PERFUMERIA
+            </h3>
+            <section class="productos__seccion3--galeria">
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-04.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-05.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-06.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <!-- PRODUCTOS ******** SECCION 3--- FINAL PERFUMERIA -->
+            <!-- ************************************************ -->
+            <!-- ************************************************ -->
+            <!-- PRODUCTOS ******** SECCION 3--- BELLEZA Y CUIDADO -->
+            <h3 id="bellezaycuidado" class="productos__seccion3--texto">
+                BELLEZA Y CUIDADO
+            </h3>
+            <section class="productos__seccion3--galeria">
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-04.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-05.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-06.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <!-- PRODUCTOS ******** SECCION 3--- FINAL BELLEZA Y CUIDADO -->
+            <!-- ************************************************ -->
+            <!-- ************************************************ -->
+            <!-- PRODUCTOS ******** SECCION 3--- CUIDADOS DIARIOS -->
+            <h3 id="cuidadosdiarios" class="productos__seccion3--texto">
+                CUIDADOS DIARIOS
+            </h3>
+            <section class="productos__seccion3--galeria">
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-04.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-05.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-06.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <!-- PRODUCTOS ******** SECCION 3--- FINAL CUIDADOS DIARIOS -->
+            <!-- ************************************************ -->
+            <!-- ************************************************ -->
+            <!-- PRODUCTOS ******** SECCION 3--- CABELLOS -->
+            <h3 id="cabellos" class="productos__seccion3--texto">
+                CABELLOS
+            </h3>
+            <section class="productos__seccion3--galeria">
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-04.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-05.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-06.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <!-- PRODUCTOS ******** SECCION 3--- FINAL CABELLOS -->
+            <!-- ************************************************ -->
+            <!-- ************************************************ -->
+            <!-- PRODUCTOS ******** SECCION 3--- FOTOEQUILIBRIO -->
+            <h3 id="fotoequilibrio" class="productos__seccion3--texto">
+                FOTOEQUILIBRIO
+            </h3>
+            <section class="productos__seccion3--galeria">
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-04.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-05.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-06.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <!-- PRODUCTOS ******** SECCION 3--- FINAL FOTOEQUILIBRIO -->
+            <!-- ************************************************ -->
+            <!-- ************************************************ -->
+            <!-- PRODUCTOS ******** SECCION 3--- NATURÉ -->
+            <h3 id="nature" class="productos__seccion3--texto">
+                NATURÉ
+            </h3>
+            <section class="productos__seccion3--galeria">
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-04.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-05.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-06.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <!-- PRODUCTOS ******** SECCION 3--- FINAL NATURÉ -->
+            <!-- ************************************************ -->
+            <!-- ************************************************ -->
+            <!-- PRODUCTOS ******** SECCION 3--- MAMA Y BEBE -->
+            <h3 id="mamaybebe" class="productos__seccion3--texto">
+                MAMA Y BEBE
+            </h3>
+            <section class="productos__seccion3--galeria">
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-04.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-05.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-06.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <!-- PRODUCTOS ******** SECCION 3--- FINAL MAMA Y BEBE -->
+            <!-- ************************************************ -->
+            <!-- ************************************************ -->
+            <!-- PRODUCTOS ******** SECCION 3--- CREER PARA VER -->
+            <h3 id="crecerparaver" class="productos__seccion3--texto">
+                CREER PARA VER
+            </h3>
+            <section class="productos__seccion3--galeria">
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-04.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-05.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="productos__seccion3--cuadroProductos">
+                    <img class="productos__seccion3--imgProductos" alt="imagen_productos" src="../img/productos/PR-06.jpeg">
+                    <button class="productos__seccion3--btnCompra productos__seccion3--btnCompartida" type="button">COMPRAR</button>
+                    <button class="productos__seccion3--btnStock productos__seccion3--btnCompartida" type="button">STOCK</button>
+                    <table class="productos__seccion3--tabla">
+                        <caption class="productos__seccion3--tablaTitulo">
+                            COMPARA LOS PRECIOS Y ELEGÍ
+                        </caption>
+                        <tr>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE LISTA</th>
+                            <th class="productos__seccion3--tablaCabecera">PRECIO DE VENTA</th>
+                        </tr>
+                        <tr>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                            <td class="productos__seccion3--tablaPrecio">XXXX $</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </section>
+        <!-- PRODUCTOS ******** SECCION 3--- FINAL CREER PARA VER -->
+        <!-- ************************************************ -->
+        <!-- PRODUCTOS ************************** SECCION 3-->
+    </main>
+    <!-- *********************** CUERPO PAGINA PRODUCTOS-->
+    <!-- PIE DE PAGINA-->
+    <footer class="piepagina">
+        <!-- PIE DE PAGINA: SECCION SUPERIOR-->
+        <section class="piepagina__seccion1">
+            <!-- PIE DE PAGINA: LOGO-->
+            <a href="https://www.naturacosmeticos.com.ar">
+                <img class="piepagina__seccion1--imagen" alt="Logo de producto" src="../img/natura.svg">
+            </a>
+            <!-- PIE DE PAGINA: FINAL LOGO-->
+            <!-- PIE DE PAGINA: SECCION DE CONTACTO-->
+            <div class="piepagina__seccion1--subSeccion">
+                <div >
+                    <h3 class="piepagina__seccion1--titulo1">Contacto</h3>
+                    <ul>
+                        <li class="piepagina__seccion1--subtexto1">
+                            Tel: XXXX-XXXX 
+                        </li>
+                        <li class="piepagina__seccion1--subtexto1">
+                            E-mail:xxxxxx@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <!-- PIE DE PAGINA: FINAL SECCION DE CONTACTO-->
+                <!-- PIE DE PAGINA: SECCION DE REDES SOCIALES-->
+                <div>
+                    <h3 class="piepagina__seccion1--titulo2">Redes Sociales</h3>
+                    <a href="https://es-la.facebook.com">
+                        <img src="../img/bxl-facebook.svg" alt="Icono_Red_Social" class="piepagina__seccion1--img">
+                    </a>
+                    <a href="https://www.instagram.com/?hl=es">
+                        <img src="../img/bxl-instagram.svg" alt="Icono_Red_Social" class="piepagina__seccion1--img">
+                    </a>
+                    <a href="https://web.whatsapp.com/">
+                        <img src="../img/icons8-whatsapp.svg" alt="Icono_Red_Social" class="piepagina__seccion1--img">
+                    </a>
+                    <a href="https://twitter.com/?lang=es">
+                        <img src="../img/bxl-twitter.svg" alt="Icono_Red_Social" class="piepagina__seccion1--img">
+                    </a>
+                </div>
+                <!-- PIE DE PAGINA: FINAL SECCION DE REDES SOCIALES-->
+            </div>
+        </section>
+        <!-- PIE DE PAGINA: FINAL SECCION SUPERIOR-->
+        <!-- PIE DE PAGINA: SECCION INFERIOR-->
+        <div class="piepagina__seccion2">
+            &copy; Derechos Reservados - XXVentas - 2021
+        </div>
+        <!-- PIE DE PAGINA: FINAL SECCION INFERIOR-->
+    </footer>
+    <!-- *********************** PIE DE PAGINA-->
+    <!-- SCRIPT PANTALLA PREVIA-->
+    <script src="../scripts/main.js"></script>
+    <!-- *********************** FINAL SCRIPT PANTALLA PREVIA-->
+</body>
+</html>

@@ -1,0 +1,213 @@
+//********************************************
+// ARCHIVO----> ESTILOS PARA PAGINA PRINCIPAL
+//********************************************
+.principal {
+  &__seccion {
+    /*animacion de fonfo*/
+    @keyframes slide {
+      0% {
+        transform: translateX(-25%);
+      }
+      100% {
+        transform: translateX(25%);
+      }
+    }
+    &--fondo1,
+    &--fondo2,
+    &--fondo3 {
+      background-image: linear-gradient(-60deg, bisque 50%, white 50%);
+      bottom: 0;
+      left: -50%;
+      opacity: 0.6;
+      position: fixed;
+      right: -50%;
+      top: 0;
+      z-index: -1;
+    }
+    &--fondo1 {
+      animation: slide 3s ease-in-out infinite alternate;
+    }
+    &--fondo2 {
+      animation: slide 4s ease-in infinite alternate-reverse;
+    }
+    &--fondo3 {
+      animation: slide 5s ease infinite alternate-reverse;
+    }
+  }
+  &__seccionTitulo {
+    margin-top: $margenEntreSeccion;
+    margin-right: $margenLateralesSeccion;
+    margin-left: $margenLateralesSeccion;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    @include tablet_disp {
+      font-size: $textTamaño2;
+      height: 7.5vh;
+    }
+    @include mobile_disp {
+      font-size: $textTamaño1;
+    }
+    &--texto {
+      color: $proGeneralTexto;
+      font-family: "Roboto", sans-serif;
+      font-size: 2.5em;
+      letter-spacing: 0.3em;
+    }
+    &--textoComplemento {
+      color: $proGeneralTexto;
+      font-size: 2em;
+    }
+  }
+  &__seccion1 {
+    margin: 2em auto;
+    width: fit-content;
+    @include tablet_disp {
+      font-size: $textTamaño2;
+    }
+    @include mobile_disp {
+      font-size: $textTamaño1;
+    }
+    &--cuadroTexto {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: inherit;
+      width: 75vw;
+      text-align: center;
+      flex-wrap: wrap;
+      position: relative;
+      @include tablet_disp {
+        justify-content: space-evenly;
+      }
+      @include mobile_disp {
+        z-index: -1;
+      }
+    }
+  }
+  &__seccion2 {
+    margin-top: $margenEntreSeccion;
+    margin-right: $margenLateralesSeccion;
+    margin-left: $margenLateralesSeccion;
+    border: brown 0.5em;
+    border-radius: 2em;
+    border-style: outset;
+    height: 50vh;
+    @include deskop_to_tablet {
+      font-size: $textTamaño2;
+    }
+    @include tablet_disp {
+      font-size: $textTamaño2;
+    }
+    @include mobile_disp {
+      z-index: -1;
+      height: 75vh;
+      font-size: $textTamaño1;
+    }
+    &--cuadroImagenes {
+      height: 85%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+      background-image: url(../img/tamanna-rumee-Wt33T42JNCM-unsplash.jpg);
+      background-position: center;
+      background-size: cover;
+      @include tablet_disp {
+        height: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+      }
+      @include mobile_disp {
+        height: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+      }
+    }
+    &--itemCuadro {
+      text-align: center;
+      font-size: 2.5em;
+      background-color: #eb994d;
+      padding: 0 0.25em;
+      border: solid brown;
+      border-radius: 1em;
+      list-style-type: none;
+    }
+    &--itemCuadro:hover {
+      background-color: #e9b587;
+      transform: scale(1.1);
+      transition: all 0.5s;
+    }
+    &--itemLink {
+      text-decoration: none;
+      font-weight: 400;
+      font-style: italic;
+    }
+    &--itemLink:hover {
+      color: #555;
+    }
+    &--pie {
+      height: 15%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #eb994d;
+      @include tablet_disp {
+        height: 10%;
+      }
+      @include mobile_disp {
+        height: 10%;
+      }
+    }
+    @keyframes movimiento {
+      0% {
+        align-self: center;
+      }
+      25% {
+        align-self: flex-start;
+      }
+      50% {
+        align-self: center;
+      }
+      75% {
+        align-self: flex-end;
+      }
+      100% {
+        align-self: center;
+      }
+    }
+    &--simbol {
+      letter-spacing: 0.75em;
+      color: brown;
+      font-size: 3em;
+      animation-name: movimiento;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 0.5s;
+      animation-delay: 0s;
+      @include deskop_to_tablet {
+        letter-spacing: 0.3em;
+      }
+      @include tablet_disp {
+        letter-spacing: 0.25em;
+      }
+      @include mobile_disp {
+        display: none;
+      }
+    }
+    &--texto {
+      color: brown;
+      font-size: 2.5em;
+      letter-spacing: 0.3em;
+      @include deskop_to_tablet {
+        letter-spacing: 0.1em;
+      }
+      @include tablet_disp {
+        letter-spacing: 0;
+      }
+    }
+  }
+}

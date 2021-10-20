@@ -1,0 +1,89 @@
+// ARCHIVO----> VARIABLES
+
+// **********************************
+// ********* COLORES ********* //
+// **********************************
+
+// ********* GENERAL ********* //
+// CABERACERA SECCION - GRADIENTE
+$proGeneralSeccion1: #eb994d;
+$proGeneralSeccion2: white;
+// CABERACERA COLOR TEXTO:
+$proGeneralTexto: brown;
+
+// ********* CABECERA ********* //
+// BACKGROUND - GRADIENTE
+$cabeceraGradiente1: #ffcc90;
+$cabeceraGradiente2: white;
+// MENU NAVEGACION - FONDO
+$cabeceraNavegacionFondo: #eb994d;
+// MENU NAVEGACION - COLOR FUENTE
+$cabeceraNavegacionFuente: white;
+
+// ********* PIE DE PAGINA ********* //
+// BACKGROUND - GRADIENTE
+$pieGradiente1: #8a7979;
+$pieGradiente2: white;
+// BACKGROUND - PIE DE TEXTO
+$pieFondo: maroon;
+$pieTextoFondo: white;
+
+// **********************************
+// ********* MARGENES ********* //
+// **********************************
+$margenEntreSeccion: 1rem;
+$margenLateralesSeccion: 1rem;
+
+// **********************************
+// ********* REPONSIVE ********* //
+// **********************************
+// DISPOSITIVOS
+$TamañoMediaQuery: (
+  tamaño1: 640px,
+  tamaño2: 768px,
+  tamaño4: 1300px,
+);
+// TAMAÑOS DE FUENTE
+$textTamaño1: 6px;
+$textTamaño2: 8px;
+
+// **********************************
+// ********* VARIABLES PARA EACH ********* //
+// **********************************
+$principalTextos: (
+  texto1: #8b4513,
+  texto2: #a3673c,
+  texto3: #a3673ce0,
+);
+
+$principalComentarios: (
+  Comentario1: #a3673c,
+  Comentario2: #a3673ce0,
+  Comentario3: #8b4513,
+);
+
+// **********************************
+// ********* VARIABLES PARA BUCLE FOR ********* //
+// **********************************
+
+$colorFuenteProductos: (
+  producto1: rgba(233, 221, 53, 0.863),
+  producto2: rgb(207, 67, 79),
+  producto3: rgb(218, 235, 171),
+  producto4: rgb(114, 134, 128),
+  producto5: rgb(255, 0, 0),
+  producto6: rgba(175, 104, 110, 0.952),
+  producto7: rgb(255, 0, 0),
+  producto8: rgb(99, 248, 0),
+);
+
+$colorFondoFuenteProductos: (
+  fondoProducto1: rgb(114, 134, 128),
+  fondoProducto2: rgba(175, 104, 110, 0.952),
+  fondoProducto3: rgb(255, 0, 0),
+  fondoProducto4: rgb(99, 248, 0),
+  fondoProducto5: rgba(219, 154, 143, 0.863),
+  fondoProducto6: rgb(223, 175, 179),
+  fondoProducto7: rgb(218, 235, 171),
+  fondoProducto8: rgb(114, 134, 128),
+);

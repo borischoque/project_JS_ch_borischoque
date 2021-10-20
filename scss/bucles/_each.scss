@@ -1,0 +1,76 @@
+// ARCHIVO----> MIXIN
+@import "../variables/variables";
+
+// **********************************
+// ********* PAGE: PRINCIPAL ********* //
+// ********* CLASES GENERADAS POR EACH********* //
+// **********************************
+
+@each $texto, $color in $principalTextos {
+  .principal__seccion1--#{$texto} {
+    width: 10em;
+    color: $color;
+    margin: 1em 1em;
+    padding: 0.5em 1em;
+    border: 0.1em $color solid;
+    border-radius: 1em;
+    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    @include tablet_disp {
+      color: black;
+      background-color: #fcdbc8;
+    }
+    @include mobile_disp {
+      color: black;
+      background-color: #fcdbc8;
+    }
+  }
+
+  .principal__seccion1--#{$texto}:hover {
+    color: black;
+    transform: translateY(-0.5em);
+  }
+  .principal__seccion1--#{$texto}::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: scale(0, 1);
+    transition: transform 0.25s ease-in;
+    background-color: #fcdbc8;
+    border-radius: 1em;
+    z-index: -1;
+  }
+  .principal__seccion1--#{$texto}:hover::before {
+    transform: scale(1, 1);
+  }
+}
+
+@each $comentario, $color in $principalComentarios {
+  .principal__seccion1--#{$comentario} {
+    width: 10em;
+    margin: 0 auto;
+    color: $color;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 0.1em $color solid;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    font-size: 2em;
+    text-transform: uppercase;
+    position: absolute;
+    left: 1em;
+    top: 0;
+    transform: translateY(7em);
+    transition: transform 4s ease-in-out;
+    @include tablet_disp {
+      background-color: rgb(255, 255, 255);
+    }
+    @include mobile_disp {
+      background-color: rgb(255, 255, 255);
+    }
+  }
+}

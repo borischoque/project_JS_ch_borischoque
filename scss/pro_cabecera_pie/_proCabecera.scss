@@ -1,0 +1,160 @@
+// ARCHIVO----> ESTILOS PARA CABECERA
+@import "../variables/variables";
+@import "../mixin/mixin";
+.cabecera {
+  background-image: linear-gradient(
+    to left,
+    $cabeceraGradiente1,
+    $cabeceraGradiente2
+  );
+  opacity: 0.9;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  @include deskop_to_tablet {
+    font-size: $textTamaño2;
+    height: 10vh;
+  }
+  @include mobile_disp {
+    font-size: $textTamaño1;
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(
+      to bottom,
+      $cabeceraGradiente1,
+      $cabeceraGradiente2
+    );
+  }
+
+  &__logo {
+    height: inherit;
+    &--imagen {
+      height: 100%;
+      width: auto;
+      @include mobile_disp {
+        display: none;
+      }
+    }
+    &--imagenMobile {
+      display: none;
+      @include mobile_disp {
+        display: inline;
+        max-height: 100%;
+      }
+    }
+  }
+  &__menuMobile {
+    display: none;
+    @include mobile_disp {
+      display: none;
+    }
+    &--hamburguesaborde,
+    &--hamburguesaborde::before,
+    &--hamburguesaborde::after {
+      @include mobile_disp {
+        display: block;
+        background-color: #ce671e;
+        height: 0.75em;
+        width: 5em;
+        position: absolute;
+        border-radius: 2em;
+        right: 2em;
+      }
+    }
+    &--hamburguesaborde::before,
+    &--hamburguesaborde::after {
+      @include mobile_disp {
+        content: "";
+        position: absolute;
+        right: 0;
+      }
+    }
+    &--hamburguesaborde::before {
+      @include mobile_disp {
+        bottom: 1em;
+      }
+    }
+    &--hamburguesaborde::after {
+      @include mobile_disp {
+        top: 1em;
+      }
+    }
+  }
+  &__menuMobile:checked ~ nav {
+    @include mobile_disp {
+      display: block;
+    }
+  }
+  &__navegacion {
+    z-index: 1000;
+    @include tablet_disp {
+      font-size: $textTamaño2;
+      height: 100%;
+    }
+    @include mobile_disp {
+      font-size: $textTamaño1;
+      height: 75%;
+      display: none;
+    }
+    &--menu {
+      // z-index: 100;
+      display: flex;
+      @include deskop_to_tablet {
+        // z-index: 1000;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+      @include tablet_disp {
+        // flex-wrap: nowrap;
+        height: inherit;
+        justify-content: space-around;
+      }
+      @include mobile_disp {
+        flex-direction: column;
+        position: absolute;
+        align-content: center;
+        width: 100vw;
+        height: 25em;
+        top: 11em;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(
+          to top,
+          $cabeceraGradiente1,
+          $cabeceraGradiente2
+        );
+      }
+    }
+    &--itemLista {
+      margin: 0 1em;
+      font-size: 2.5em;
+      @include mobile_disp {
+        margin: 0 auto;
+      }
+    }
+
+    &--itemLink {
+      background-color: $cabeceraNavegacionFondo;
+      color: $cabeceraNavegacionFuente;
+      text-decoration: none;
+      padding: 0 1em;
+      font-family: "Roboto", sans-serif;
+      @include mobile_disp {
+        border-radius: 1em;
+      }
+    }
+    &--itemLink:hover {
+      color: $cabeceraNavegacionFondo;
+      background-color: $cabeceraNavegacionFuente;
+    }
+    &--itemLinkActual {
+      background-color: #e9b587;
+      color: #555;
+      border-radius: 1em;
+      border-style: solid;
+    }
+  }
+}

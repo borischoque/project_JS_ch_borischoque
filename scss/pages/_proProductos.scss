@@ -1,0 +1,584 @@
+//********************************************
+// ARCHIVO----> ESTILOS PARA PAGINA PRODUCTOS
+//********************************************
+.productos {
+  &__seccionTitulo {
+    margin-top: $margenEntreSeccion;
+    margin-right: $margenLateralesSeccion;
+    margin-left: $margenLateralesSeccion;
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(
+      to bottom,
+      $proGeneralSeccion2,
+      $proGeneralSeccion1
+    );
+    @keyframes movimiento {
+      0% {
+        align-self: center;
+      }
+      25% {
+        align-self: flex-start;
+      }
+      50% {
+        align-self: center;
+      }
+      75% {
+        align-self: flex-end;
+      }
+      100% {
+        align-self: center;
+      }
+    }
+    @include deskop_to_tablet {
+      font-size: $textTamaño2;
+    }
+    @include tablet_disp {
+      font-size: $textTamaño2;
+    }
+    @include mobile_disp {
+      font-size: $textTamaño1;
+    }
+    &--simbol {
+      letter-spacing: 0.75em;
+      color: $proGeneralTexto;
+      font-size: 3em;
+      animation-name: movimiento;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 0.5s;
+      animation-delay: 0s;
+      @include deskop_to_tablet {
+        letter-spacing: 0.3em;
+      }
+      @include tablet_disp {
+        letter-spacing: 0.25em;
+      }
+      @include mobile_disp {
+        display: none;
+      }
+    }
+    &--texto {
+      color: $proGeneralTexto;
+      font-family: "Roboto", sans-serif;
+      font-size: 2.5em;
+      letter-spacing: 0.3em;
+      @include deskop_to_tablet {
+        letter-spacing: 0.1em;
+      }
+      @include tablet_disp {
+        letter-spacing: 0;
+      }
+    }
+  }
+  &__seccionFondo {
+    z-index: -99;
+    background-color: #e9b587;
+    // background-color: #ce671e;
+    opacity: 0.6;
+    position: absolute;
+    top: 29vh;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    width: 97vw;
+    @include deskop_to_tablet {
+      top: 15vh;
+      height: 120%;
+      width: 96vw;
+    }
+    @include tablet_disp {
+      top: 16vh;
+      height: 100%;
+      width: 95vw;
+    }
+    @include mobile_disp {
+      top: 16vh;
+      height: 88%;
+      width: 93vw;
+    }
+    @keyframes drop {
+      0% {
+        top: -50%;
+      }
+      100% {
+        top: 110%;
+      }
+    }
+    &--linea {
+      z-index: -1;
+      position: absolute;
+      width: 1em;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      background-color: $cabeceraNavegacionFondo;
+      opacity: 0.75;
+      // background: rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 15vh;
+        width: 100%;
+        top: -50%;
+        left: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0) 50%,
+          #ce671e 100%,
+          #ce671e 100%
+        );
+        animation: drop 4s 0s infinite;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+      }
+      &:nth-child(1) {
+        margin-left: -20%;
+        &::after {
+          animation-delay: 2s;
+        }
+      }
+      &:nth-child(3) {
+        margin-left: 20%;
+        &::after {
+          animation-delay: 6.5s;
+        }
+      }
+      &:nth-child(4) {
+        margin-left: -35%;
+        &::after {
+          animation-delay: 3s;
+        }
+      }
+      &:nth-child(5) {
+        margin-left: 35%;
+        &::after {
+          animation-delay: 4s;
+        }
+      }
+      &:nth-child(6) {
+        margin-left: -45%;
+        &::after {
+          animation-delay: 4s;
+        }
+      }
+      &:nth-child(7) {
+        margin-left: 45%;
+        &::after {
+          animation-delay: 5s;
+        }
+      }
+    }
+  }
+
+  &__seccion1 {
+    margin-top: $margenEntreSeccion;
+    margin-right: $margenLateralesSeccion;
+    margin-left: $margenLateralesSeccion;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include deskop_to_tablet {
+      flex-direction: column;
+    }
+    @include tablet_disp {
+      font-size: $textTamaño2;
+    }
+    @include mobile_disp {
+      font-size: $textTamaño1;
+    }
+    &--tarjeta {
+      z-index: -1;
+      position: relative;
+      width: 30em;
+      height: 15em;
+      background-color: $cabeceraNavegacionFondo;
+      overflow: hidden;
+      &::after {
+        z-index: 1000;
+        content: "\279C";
+        color: black;
+        font-size: 5em;
+        position: absolute;
+        top: 1.5px;
+        left: 4px;
+        transform: scale(0, 0);
+        transition: transform 0.25s ease-in;
+        @include deskop_to_tablet {
+          writing-mode: vertical-rl;
+          // display: none;
+          // transform: none;
+          // transition: none;
+        }
+      }
+      &:hover::after {
+        transform: scale(1, 1) translateX(3rem);
+        @include tablet_disp {
+          transform: none;
+        }
+      }
+    }
+    &--textoTarjeta {
+      z-index: 9;
+      font-family: "Roboto", sans-serif;
+      position: absolute;
+      top: 1.5em;
+      left: 1.75em;
+      font-size: 3em;
+      font-weight: 800;
+      color: white;
+    }
+    &--imagenTarjeta {
+      z-index: 10;
+      width: 22em;
+      height: 15em;
+      background-image: url(../img/fast-delivery-2.jpg);
+      background-size: 100% 100%;
+      filter: grayscale(100%);
+    }
+    &--lateralBoton {
+      position: absolute;
+      width: 2em;
+      height: 2em;
+      top: 9em;
+      left: 20em;
+      background-color: #e9b587;
+      border: none;
+      border-radius: 2em;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease;
+      mix-blend-mode: hard-light;
+      @include mobile_disp {
+        top: 4em;
+        left: 11em;
+      }
+    }
+    &:hover &--lateralBoton {
+      transform: scale(12);
+    }
+    &:hover &--imagenTarjeta {
+      filter: grayscale(0);
+    }
+    &--formulario {
+      // border: brown solid 0.5em;
+      // background-color: #aaa7a7;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 90em;
+      height: 7em;
+      border-radius: 3em;
+      margin: 0 2em;
+      @include deskop_to_tablet {
+        margin-top: $margenEntreSeccion;
+      }
+      @include mobile_disp {
+        width: 75vw;
+        flex-direction: column;
+      }
+    }
+    &--etiqueta {
+      font-size: 2em;
+      @include mobile_disp {
+        display: none;
+      }
+    }
+    &--inputDatos {
+      height: 2em;
+      width: 50em;
+      @include mobile_disp {
+        height: 1.5em;
+        width: 35vw;
+      }
+    }
+  }
+  &__seccion2 {
+    margin-top: $margenEntreSeccion;
+    margin-right: $margenLateralesSeccion;
+    margin-left: $margenLateralesSeccion;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @include deskop_to_tablet {
+      flex-direction: column;
+    }
+    @include tablet_disp {
+      font-size: $textTamaño2;
+    }
+    @include mobile_disp {
+      font-size: $textTamaño1;
+    }
+    &--tarjeta {
+      z-index: -10;
+      position: relative;
+      width: 30em;
+      height: 15em;
+      background-color: $cabeceraNavegacionFondo;
+      overflow: hidden;
+      &::after {
+        z-index: -11;
+        content: "\279C";
+        color: black;
+        font-size: 5em;
+        position: absolute;
+        top: 1.5em;
+        left: 4em;
+        transform: scale(0, 0);
+        transition: transform 0.25s ease-in;
+        @include deskop_to_tablet {
+          writing-mode: vertical-rl;
+          // display: none;
+          // transform: none;
+          // transition: none;
+        }
+      }
+      &:hover::after {
+        transform: scale(1, 1) translateX(3rem);
+        @include tablet_disp {
+          transform: none;
+        }
+      }
+    }
+    &--textoTarjeta {
+      z-index: 99;
+      font-family: "Roboto", sans-serif;
+      position: absolute;
+      top: 1em;
+      left: 1.75em;
+      font-size: 3em;
+      font-weight: 800;
+      color: white;
+    }
+    &--imagenTarjeta {
+      z-index: 100;
+      width: 22em;
+      height: 15em;
+      background-image: url(../img/fast-delivery-3.jpg);
+      background-size: 100% 100%;
+      filter: grayscale(100%);
+    }
+    &--lateralBoton {
+      position: absolute;
+      width: 2em;
+      height: 2em;
+      top: 8em;
+      left: 20em;
+      background-color: #e9b587;
+      border: none;
+      border-radius: 2em;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease;
+      mix-blend-mode: hard-light;
+      @include mobile_disp {
+        top: 4em;
+        left: 11em;
+      }
+    }
+    &:hover &--lateralBoton {
+      transform: scale(12);
+    }
+    &:hover &--imagenTarjeta {
+      filter: grayscale(0);
+    }
+    &--texto {
+      background-color: #eccdaf;
+      color: brown;
+      font-size: 2em;
+      border: 0.25em solid brown;
+      border-radius: 3em;
+      padding: 0.5em 0.5em;
+      transition: transform 0.5s ease-in;
+      position: relative;
+      @include tablet_disp {
+        transform: none;
+        transition: none;
+        z-index: -1;
+      }
+    }
+    &--texto:hover {
+      transform: translateX(-3em);
+      @include tablet_disp {
+        transform: none;
+      }
+    }
+    &--texto::after {
+      content: "\21E8";
+      font-size: 5em;
+      position: absolute;
+      bottom: -0.5em;
+      right: -1em;
+      transform: scale(0, 1);
+      transition: transform 0.25s ease-in;
+      @include tablet_disp {
+        display: none;
+        transform: none;
+        transition: none;
+      }
+    }
+    &--texto:hover::after {
+      transform: scale(1, 1) translateX(3rem);
+      @include tablet_disp {
+        transform: none;
+      }
+    }
+    &--cuadroImagenes {
+      // border: brown solid 0.5em;
+      width: 90em;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+      border-radius: 3em;
+      @include deskop_to_tablet {
+        margin-top: $margenEntreSeccion;
+      }
+      @include mobile_disp {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        width: 75vw;
+      }
+    }
+    &--itemCuadro {
+      text-align: center;
+      font-size: 2em;
+      font-style: oblique;
+      background-color: #eb994d;
+      list-style-type: none;
+      color: black;
+      border-radius: 1.5em;
+      margin: 1em 0;
+    }
+    &--itemLink,
+    &--itemLink::before,
+    &--itemLink::after,
+    &--itemCuadro:hover {
+      transition: all 0.5s ease-in;
+    }
+    &--itemLink {
+      display: block;
+      color: brown;
+      padding: 0.75em 0.25em;
+      text-decoration: none;
+
+      position: relative;
+      z-index: 1;
+    }
+    &--itemLink:hover {
+      color: black;
+    }
+    &--itemLink::after {
+      display: block;
+      position: absolute;
+      border-radius: 1.5em;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 100%;
+      height: 0;
+      content: ".";
+      color: transparent;
+      background: hsl(48, 89%, 50%);
+      visibility: none;
+      opacity: 0;
+      z-index: -1;
+    }
+    &--itemLink:hover::after {
+      opacity: 1;
+      visibility: visible;
+      height: 100%;
+    }
+  }
+  &__seccion3 {
+    margin-top: $margenEntreSeccion;
+    margin-right: $margenLateralesSeccion;
+    margin-left: $margenLateralesSeccion;
+    @include deskop_to_tablet {
+      font-size: $textTamaño2;
+    }
+    @include tablet_disp {
+      font-size: $textTamaño2;
+    }
+    @include mobile_disp {
+      font-size: $textTamaño1;
+    }
+    &--texto {
+      margin-top: $margenEntreSeccion;
+      background-color: #eccdaf;
+      color: brown;
+      font-size: 2.5em;
+      text-align: center;
+    }
+    &--galeria {
+      margin-top: 1em;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    &--cuadroProductos {
+      width: 40em;
+      background-color: #d3d2d2;
+      display: grid;
+      grid-template-areas:
+        "imagen-producto boton-stock"
+        "imagen-producto boton-compra"
+        "tabla-precio tabla-precio";
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      border: 0.1rem solid brown;
+      border-radius: 1rem;
+    }
+    &--imgProductos {
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+      grid-area: imagen-producto;
+      justify-self: center;
+      align-self: center;
+      border: solid 0.5em #e65936;
+      border-radius: 1em;
+    }
+    &--btnCompra {
+      grid-area: boton-compra;
+    }
+    &--btnStock {
+      grid-area: boton-stock;
+    }
+    &--btnCompartida {
+      background-color: #eb6a4d;
+      font-size: 2.5em;
+      width: min-content;
+      padding: 0.2em;
+      border-radius: 1em;
+    }
+    &--tabla {
+      grid-area: tabla-precio;
+      margin: 0 1em;
+      border: solid 0.5em black;
+      border-radius: 1em;
+    }
+    &--tablaTitulo {
+      font-size: 2.5em;
+      font-style: italic;
+    }
+    &--tablaCabecera {
+      font-size: 2em;
+    }
+    &--tablaPrecio {
+      font-size: 2em;
+      text-align: center;
+    }
+  }
+}
