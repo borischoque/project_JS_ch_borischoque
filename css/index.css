@@ -526,7 +526,7 @@ html {
   @media only screen and (max-width: 640px) {
     .productos__seccionFondo {
       top: 16vh;
-      height: 88%;
+      height: 140%;
       width: 93vw; } }
 
 @keyframes drop {
@@ -1024,6 +1024,7 @@ html {
     justify-content: space-around;
     flex-wrap: wrap; }
   .stock__seccionOfertas--contenedorTarjeta, .stock__seccionOfertas--contenedorTarjetaType2 {
+    z-index: -1;
     width: 40em;
     height: 20em;
     perspective: 100em; }
