@@ -1024,7 +1024,6 @@ html {
     justify-content: space-around;
     flex-wrap: wrap; }
   .stock__seccionOfertas--contenedorTarjeta, .stock__seccionOfertas--contenedorTarjetaType2 {
-    z-index: -1;
     width: 40em;
     height: 20em;
     perspective: 100em; }
